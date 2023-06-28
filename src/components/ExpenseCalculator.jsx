@@ -6,15 +6,18 @@ export default function ExpenseCalculator() {
   const [expanselist, setexpanselist] = useState([]);
 
   const handleAddExpense = () => {
-    const newExpense = {
-      name: name,
-      amount: parseFloat(amount),
-    };
-
-    setexpanselist([...expanselist, newExpense]);
-    setname("");
-    setamount("");
+    if (name.trim() !== "" && amount.trim() !== "") {
+      const newExpense = {
+        name: name,
+        amount: parseFloat(amount),
+      };
+  
+      setexpanselist([...expanselist, newExpense]);
+      setname("");
+      setamount("");
+    }
   };
+  
 
   const calculateTotalExpense = () => {
     return expanselist.reduce((total, expense) => total + expense.amount, 0);
