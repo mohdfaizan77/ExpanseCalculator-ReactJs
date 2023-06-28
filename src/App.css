@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.counterButton{
+  margin: 20px;
+  padding: 10px;
+}
+
+
+.commoncomponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.eHeading{
+  /* font-size: large; */
+  border-radius: 8px;
+  /* border: 1px solid #ccc; */
+  padding: 0.6em 1.2em;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.elabel{
+  padding: 15px;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.einput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.einput:focus {
+  outline: none;
+  border-color: #00ff22;
+}
+
+ button {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.etotal{
+  font-size: 23px;
+  padding: 10px;
+  margin: 40px;
+}
+
